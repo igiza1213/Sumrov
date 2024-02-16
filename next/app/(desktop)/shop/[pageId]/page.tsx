@@ -9,6 +9,7 @@ import {
   Minus,
   Plus,
 } from "lucide-react";
+import Footer from "../../_components/footer";
 import Header from "../../_components/header";
 
 const data = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
@@ -18,7 +19,7 @@ const ShopPageDetail = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col items-center dark:bg-neutral-900 pt-[150px] px-[157.5px] pb-[306.67px]">
+      <div className="flex flex-col items-center bg-neutral-50 dark:bg-neutral-900 pt-[150px] px-[157.5px] pb-[306.67px]">
         <div className="w-[1125px] flex-col items-center gap-[200px] inline-flex">
           <div className="flex-col justify-start items-center gap-[15px] flex">
             <div className="justify-center items-center gap-[25px] inline-flex">
@@ -338,6 +339,7 @@ const ShopPageDetail = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

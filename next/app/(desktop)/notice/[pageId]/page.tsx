@@ -1,10 +1,11 @@
+import Footer from "../../_components/footer";
 import Header from "../../_components/header";
 
 const NoticePageDetail = () => {
   return (
     <>
       <Header />
-      <div className="pt-[200px] pb-[91px] flex justify-center">
+      <div className="pt-[200px] pb-[91px] flex justify-center bg-neutral-50">
         <div className="gap-[50px] flex flex-col">
           <div className="w-[1001px] flex-col justify-start items-center gap-[70px] inline-flex">
             <div className="text-black dark:text-neutral-50 text-[32px] font-bold font-nav tracking-[3.20px]">
@@ -141,6 +142,7 @@ const NoticePageDetail = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

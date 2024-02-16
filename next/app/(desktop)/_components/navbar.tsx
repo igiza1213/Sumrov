@@ -34,10 +34,10 @@ const data: {
   {
     title: "Service",
     items: [
-      { href: "notice", list: "Notice" },
-      { href: "review", list: "Review" },
-      { href: "QnA", list: "Q&A" },
-      { href: "FAQ", list: "FAQ" },
+      { href: "/notice", list: "Notice" },
+      { href: "/review", list: "Review" },
+      { href: "/QnA", list: "Q&A" },
+      { href: "/FAQ", list: "FAQ" },
     ],
   },
 ];

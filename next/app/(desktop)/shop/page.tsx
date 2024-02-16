@@ -5,6 +5,7 @@ import {
   ChevronsLeft,
   ChevronsRight,
 } from "lucide-react";
+import Footer from "../_components/footer";
 import Header from "../_components/header";
 
 const data: {}[] = [{}, {}, {}];
@@ -13,7 +14,7 @@ const ShopPage = () => {
   return (
     <>
       <Header />
-      <div className="w-full h-full flex flex-col justify-center items-center pt-[188px] pb-[142px] gap-[50px]">
+      <div className="w-full h-full flex flex-col justify-center items-center pt-[188px] bg-neutral-50 pb-[142px] gap-[50px]">
         <div className="flex-col justify-center items-center gap-[25px] inline-flex">
           <div className="text-neutral-900 dark:text-neutral-50 text-lg font-bold font-nav tracking-widest">
             ALL
@@ -71,6 +72,7 @@ const ShopPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

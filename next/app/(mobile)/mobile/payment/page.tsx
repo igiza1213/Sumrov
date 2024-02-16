@@ -9,15 +9,18 @@ const PatmentPage = () => {
   return (
     <>
       <div className="w-full h-9 bg-gray-600 flex items-center justify-between px-[10px]">
-        <div className="text-center text-neutral-50 text-sm font-medium font-pre">
+        <div className="text-center text-neutral-50 dark:text-neutral-900 text-sm font-medium font-pre">
           주문/결제
         </div>
         <Link href={"/mobile/shop"}>
-          <X strokeWidth={1} className="w-[26px] h-[26px] text-neutral-50" />
+          <X
+            strokeWidth={1}
+            className="w-[26px] h-[26px] text-neutral-50 dark:text-neutral-900"
+          />
         </Link>
       </div>
 
-      <div className="w-full flex flex-col pt-[25px] items-center bg-neutral-900">
+      <div className="w-full flex flex-col pt-[25px] items-center dark:bg-neutral-900">
         <div className="w-[336px] h-7 border-b border-gray-200">
           <div className="dark:text-white text-black text-[13px] font-medium font-pre">
             배송지
@@ -42,11 +45,11 @@ const PatmentPage = () => {
               </div>
               <Input
                 placeholder="기본주소"
-                className="w-[261px] h-[26px] bg-white rounded-sm border border-neutral-300"
+                className="w-[261px] h-[26px] bg-white border border-neutral-300"
               />
               <Input
                 placeholder="상세주소(선택)"
-                className="w-[261px] h-[26px] bg-white rounded-sm border border-neutral-300"
+                className="w-[261px] h-[26px] bg-white border border-neutral-300"
               />
             </div>
           </div>
@@ -54,11 +57,11 @@ const PatmentPage = () => {
             <Label title="휴대전화" />
             <div className="gap-1 flex">
               <Input className="w-[72px] h-[26px]" />
-              <div className="text-black text-[11px] font-normal flex justify-center items-center font-pre">
+              <div className="text-black dark:text-neutral-50 text-[11px] font-normal flex justify-center items-center font-pre">
                 -
               </div>
               <Input className="w-[72px] h-[26px]" />
-              <div className="text-black text-[11px] font-normal flex justify-center items-center font-pre">
+              <div className="text-black dark:text-neutral-50 text-[11px] font-normal flex justify-center items-center font-pre">
                 -
               </div>
               <Input className="w-[72px] h-[26px]" />
@@ -68,7 +71,7 @@ const PatmentPage = () => {
             <Label title="이메일" />
             <div className="gap-1.5 flex">
               <Input className="w-[120px] h-[26px]" />
-              <div className="text-black text-[11px] font-normal flex justify-center items-center font-pre">
+              <div className="text-black dark:text-neutral-50 text-[11px] font-normal flex justify-center items-center font-pre">
                 @
               </div>
               <Input className="w-[120px] h-[26px]" />
@@ -250,7 +253,7 @@ const Input = React.forwardRef<
     <input
       ref={ref}
       className={cn(
-        "bg-white dark:text-white dark:bg-zinc-800 rounded-sm border placeholder:text-neutral-300 text-black text-[11px] font-normal font-pre pl-2 border-neutral-300",
+        "bg-white dark:text-white rounded-sm dark:bg-zinc-800 border placeholder:text-neutral-300 text-black text-[11px] font-normal font-pre pl-2 border-neutral-300",
         className
       )}
       {...props}
